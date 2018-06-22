@@ -1,0 +1,58 @@
+<view class='topInfo'>
+    <view class='text-auto'>
+      <view>
+        <image src='../../images/jilv-schoolIcon.png'/>
+        <text class='h4-text'>大学：</text>
+        <text class='span-text'>{{schoolName}}</text>
+      </view>
+        <view>
+          <image src='../../images/jilv-majorIcon.png' style='height:40rpx;'/>
+          <text class='h4-text'>专业：</text>
+          <text class='span-text'>{{majorName}}</text>
+        </view>
+      </view>
+</view>
+<!-- 背景条件 -->
+<view class='condition'>
+    <text class='green-title'>你是否具备以下背景条件？</text>
+    <text class='grey-title'>备注：请勾选以下已参加过的内容（可多选）</text>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{items}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>
+        <text class='ml'>{{item.value}}</text>
+      </label>
+    </checkbox-group>
+    <button bindtap='showMask'>提交</button>
+</view>
+
+<!-- 弹窗 -->
+<view class='successMask flex-container-center' style='display:{{hideNum}}'>
+     <view class='gongxi'>
+          <view class='white-bg'>
+            <image src='../../images/jilv-gongxi.png' style='width:476rpx;height:112rpx;'/>
+            <view class='grey01'>
+             申请到<text class='green'>{{schoolName}}-{{majorName}}</text>
+              <text style='display:block;'>专业的成功率为：</text>
+            </view>
+            <view class='success-rate'>
+  <image src='../../images/jilv-starLeft.png' style='width:53rpx;height:165rpx;'/>
+                <text class='green bigFont'>{{percent}}%</text>
+                <text class='grey02'>已超过<text class='green'>{{jibai}}%</text>的人!</text>
+  <image src='../../images/jilv-starRight.png' style='width:60rpx;height:149rpx;'/>
+            </view>
+          <view class='warn'>
+              <text>*</text>
+              <text>此报告匹配标准以雷哥留学网近5年留学录取成功大数据
+              作为技术支撑并不能百分之百代表实际录取结果，仅供参考。</text>
+          </view>
+          <view class='btn-group'>
+            <button class='returnBtn' open-type="share">炫耀一下</button>   
+            <button class='returnBtn' bindtap='returnIndex'>返回雷哥留学</button> 
+          </view>  
+          </view>   
+         <view class='sanjiao-group' style='background:url(http://www.smartapply.cn/cn/images/evaluation/cp-whiteBG.png) repeat-x;background-size:100% auto;'>
+
+          </view> 
+     </view>
+    
+</view>

@@ -1,0 +1,78 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100% 
+}
+.out-bg{
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.white-box{
+   width: 90%;
+   background-color: rgba(255, 255, 255, 0.84);
+   padding: 60rpx 0 100rpx 0;
+   border-radius: 10rpx;
+}
+.title{
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 40rpx;
+}
+.title-img{
+   width: 55rpx;
+   height: 55rpx;
+  vertical-align: middle; 
+  position: relative;
+  top: -4rpx;
+}
+.title-text{
+  color: #6e8e1a;
+  font-size: 38rpx;
+  margin-left: 15rpx;
+}
+.input-group{
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  margin-bottom: 80rpx;
+}
+.input-group navigator{
+  height: 80rpx;
+}
+.input-in{
+  width:90%;
+  height: 100%;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  float: left;
+  background-color: white;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+button::after{
+  border: none;
+}
+.btn{
+  width: 10%;
+  float: left;
+  height: 100%;
+  background-color: #98bc36;
+  border-radius: 0;
+  line-height: 80rpx; 
+  padding-left:15rpx;
+  border: none;
+}
+.btn-img{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+}
+.sub-btn{
+  font-size: 32rpx;
+  width: 50%;
+  color: white;
+  background-color: #86ba3a;
+}

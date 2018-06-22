@@ -1,0 +1,6 @@
+<!-- 引导图 -->
+<view class='yindao'>
+   <!-- <navigator url='../index/index' hover-class='none'> -->
+       <image src='../images/jilv-yindao.png' bindtap='jumpPage'/>
+   <!-- </navigator> -->
+</view>

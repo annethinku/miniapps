@@ -1,0 +1,144 @@
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.personInfo{
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: white;
+  padding: 40rpx 0;
+}
+.progress-box{
+  width: 80%;
+  height: 40rpx;
+  margin: 0 auto;
+  background-color: #b5b5b5;
+  border-radius: 40rpx;
+  position: relative;
+  }
+  .progress-bg{
+    width: 0%;
+    height: 100%;
+    border-radius: 40rpx;
+    background-color: #98bc36;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .move-num{
+    width: 67rpx;
+    height: 49rpx;
+    line-height: 50rpx;
+    position: absolute;
+    bottom: -52rpx;
+    right: -30rpx;
+    color: white;
+    font-size: 25rpx;
+    text-align: center;
+  }
+  .move-num image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+   .move-num text{
+     position: relative;
+     z-index: 2;
+   }
+  .white-info{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40rpx;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: 0 0 10rpx #d5d5d5;
+    border-radius: 10rpx;
+    margin-top: 110rpx;
+  }
+  .green-title{
+    text-align: center;
+    margin-bottom: 40rpx;
+  }
+  .green-title image{
+    width: 38rpx;
+    height: 44rpx;
+    vertical-align: middle;
+    margin-right: 15rpx;
+  }
+  .green-title text{
+    font-size: 36rpx;
+    color: #98bc36;
+  }
+  .input-group{
+    width: 100%;
+    margin-bottom: 20rpx;
+  }
+  .input-label{
+    margin-bottom: 10rpx;
+  }
+  .input-label text.red{
+    color: red;
+    margin-left: -20rpx;
+  }
+  .input-label text.black{
+    color: #444444;
+    font-size: 30rpx;
+  }
+  .input-label text.grey{
+    color: #666666;
+    font-size: 26rpx;
+    margin-left: 10rpx;
+  }
+  .input-self input{
+    width: 100%;
+    height: 59rpx;
+    font-size: 24rpx;
+    border: 1px #d0d0d0 solid;
+    border-radius: 10rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .input-self .picker,
+   .input-self-diff{
+    width: 100%;
+    height: 59rpx;
+    line-height: 18rpx;
+    font-size: 24rpx;
+    border: 1px #d0d0d0 solid;
+    border-radius: 10rpx;
+    padding-left: 20rpx;
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+  }
+   .input-self .picker image,
+   .input-self-diff image{
+     width: 20rpx;
+     height: 17rpx;
+     position: absolute;
+     right: 20rpx;
+     top: 21rpx;
+     z-index: 2;
+   }
+  .btn-group{
+    width: 100%;
+    margin-top: 60rpx;
+  }
+   .btn-group button{
+     width: 40%;
+     background-color: #98bc36;
+     color: white;
+     font-size: 32rpx;
+   }
+   .picker input{
+     font-size: 24rpx;
+   }

@@ -1,0 +1,5 @@
+<view class='search-content'>
+    <block wx:for="{{searchList}}" wx:key="{{item.id}}">
+      <text bindtap='majorClick' data-html='{{item.name}}' data-id='{{item.id}}'>{{item.name}}</text>
+   </block>
+</view>

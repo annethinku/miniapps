@@ -1,0 +1,151 @@
+<view class='topInfo'>
+    <view class='text-auto'>
+      <view>
+        <image src='../../images/jilv-schoolIcon.png'/>
+        <text class='h4-text'>大学：</text>
+        <text class='span-text'>{{schoolName}}</text>
+      </view>
+        <view>
+          <image src='../../images/jilv-majorIcon.png' style='height:40rpx;'/>
+          <text class='h4-text'>专业：</text>
+          <text class='span-text'>{{majorName}}</text>
+        </view>
+      </view>
+</view>
+<!-- 个人成绩 -->
+<view class='personInfo' id='person-score' style='display:{{showOrHide}}'>
+    <view class='progress-box'>
+       <view class='progress-bg'>
+            <view class='move-num'>
+            <image src='../../images/jilv-baifenbi.png'/>
+               <text> 0%</text>
+            </view>
+       </view>
+    </view>
+    <view class='white-info'>
+         <view class='green-title'>
+         <image src='../../images/jilv-personCJ.png'/>
+         <text>个人成绩</text>
+         </view>
+
+         <view class='input-group'>
+             <view class='input-label'>
+                <text class='red'>*</text>
+                <text class='black'>GPA:</text>
+                <text class='grey'>例如3.0或85</text>
+             </view>
+             <view class='input-self'>
+                <input type='text' bindinput='gpaChange'/>
+             </view>
+         </view>
+         <view class='input-group'>
+             <view class='input-label'>      
+                <text class='black'>GMAT/GRE:</text>
+                <text class='grey'>若暂未出分，可填目标分数</text>
+             </view>
+             <view class='input-self'>
+                <input type='text' bindinput='gmatgreChange'/>
+             </view>
+         </view>
+
+         <view class='input-group'>
+             <view class='input-label'>  
+               <text class='red'>*</text>    
+                <text class='black'>TOEFL/IELTS:</text>
+                <text class='grey'>若暂未出分，可填目标分数</text>
+             </view>
+             <view class='input-self'>
+                <input type='text' bindinput='toeflIelChange'/>
+             </view>
+         </view>
+
+    </view>
+     <!-- 底部按钮 -->
+     <view class='btn-group flex-container-center'>
+           <button bindtap='clickNext01'>下一步</button>
+     </view>
+</view>
+<!-- 学校背景 -->
+<view class='personInfo' id='school-back' style='display:{{showOrHide02}}'>
+    <view class='progress-box'>
+       <view class='progress-bg' style='width:50%;'>
+            <view class='move-num'>
+             <image src='../../images/jilv-baifenbi.png'/>
+               <text>50%</text>
+            </view>
+       </view>
+    </view>
+    <view class='white-info'>
+         <view class='green-title'>
+         <image src='../../images/jilv-backIcon.png' style='width:51rpx;height:44rpx;'/>
+         <text>学校背景</text>
+         </view>
+
+         <view class='input-group'>
+             <view class='input-label'>
+                <text class='red'>*</text>
+                <text class='black'>目前学历：</text>
+             </view>
+             <view class='input-self'>
+               <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" data-html="{{array[index]}}">
+                  <view class="picker">
+                     <text>
+                       {{array[index]}}                  
+                     </text>       
+                      <image src='../../images/jilv-xialaJ.png'/>                                     
+                  </view>
+                </picker>
+             </view>
+         </view>
+         <view class='input-group'>
+             <view class='input-label'>    
+              <text class='red'>*</text>  
+                <text class='black'>就读/毕业院校:</text>
+             </view>
+             <view class='input-self'>
+                <picker bindchange="bindPickerChange02" value="{{index02}}" range="{{array02}}">
+                  <view class="picker">
+                     <text>
+                       {{array02[index02]}}                  
+                     </text>       
+                      <image src='../../images/jilv-xialaJ.png'/>                  
+                  </view>
+                </picker>
+             </view>
+         </view>
+
+         <view class='input-group'>
+             <view class='input-label'>  
+               <text class='red'>*</text>    
+                <text class='black'>详细填写学校名称:</text>
+             </view>
+             <view class='input-self'>
+                <input type='text' bindinput='wirteSchool'/>
+             </view>
+         </view>
+
+         <view class='input-group'>
+             <view class='input-label'>  
+               <text class='red'>*</text>    
+                <text class='black'>专业:</text>
+             </view>
+              <view class='input-self-diff'>         
+                <picker class="select" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                <view class="picker" style='width:100%;height:59rpx;line-height:59rpx;'>
+                {{multiArray[0][multiIndex[0]]}} - {{multiArray[1][multiIndex[1]]}}
+                </view>
+                <image src='../../images/jilv-xialaJ.png'/>   
+              </picker>       
+             </view> 
+               <!-- <view class='input-self'>
+                <input type='text' bindinput='wirteMajor'/>
+             </view> -->
+         </view>
+
+    </view>
+     <!-- 底部按钮 -->
+     <view class='btn-group flex-container-center'>
+           <button bindtap='clickPrev01'>上一步</button>
+           <button bindtap='clickNext02'>下一步</button>
+     </view>
+</view>

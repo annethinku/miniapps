@@ -1,0 +1,13 @@
+<view class='search-group flex-container-center'>
+    <view class='search-input flex-container-center'>
+       <image src='../../images/search.png'/>
+       <input type='search' placeholder='搜索更多学校' bindinput='searchSchool'/>
+    </view>
+    <view class='search-close' bindtap="tapClose">取消</view>
+</view>
+<view class='search-content'>
+    <block wx:for="{{searchList}}" wx:key="{{item.id}}">
+      <text bindtap='schoolClick' data-html='{{item.name}}' data-id="{{item.id}}" 
+      data-rank="{{item.rank}}" data-country="{{item.country}}">{{item.name}}</text>
+   </block>
+</view>

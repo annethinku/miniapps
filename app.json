@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/guidePage/guidePage",
+    "pages/first/first",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/components/schoolSearch/schoolSearch",
+    "pages/components/majorChoose/majorChoose",
+    "pages/components/personScore/personScore",
+    "pages/components/backCondition/backCondition",
+    "pages/components/recordResult/recordResult",
+    "pages/foundPassword/foundPassword",
+    "pages/register/register"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#98bc36",
+    "navigationBarTitleText": "雷哥留学学校录取测评",
+    "navigationBarTextStyle": "white"
+  }
+}

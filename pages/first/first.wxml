@@ -1,0 +1,26 @@
+<view class='section_wrap flex-container-hx'>
+  <!-- <view class='section flex-container-hx'>
+    <view class='select_left'>
+      <view class='tapIcon'>
+        <image style='width: 160rpx; height: 160rpx; ' mode='aspectFit' src='/pages/images/1.png'></image>
+      </view>
+      <text class='setitle'>选校测评</text>
+    </view>
+    <view class='select_right'>
+      <button class='selBtn details' hover-class='active' size='mini' type=''>查看详情</button>
+      <button class='selBtn enter' size='mini' type='' bindtap='enterPage'>参加测评</button>
+    </view>
+  </view> -->
+  <view class='section flex-container-hx'>
+    <view class='select_left'>
+      <view class='tapIcon'>
+        <image style='width: 160rpx; height: 160rpx; ' mode='aspectFit' src='/pages/images/2.png'></image>
+      </view>
+      <text class='setitle'>学校录取测评</text>
+    </view>
+    <view class='select_right'>
+      <button class='selBtn details' hover-class='active' size='mini' type='' bindtap='seeDetails'>查看详情</button>
+      <button class='selBtn enter' size='mini' type='' bindtap='enterPage'>参加测评</button>
+    </view>
+  </view>
+</view>

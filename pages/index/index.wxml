@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class='out-bg flex-container-center'>
+     <image src='../images/jilv-bigBG.jpg' style='width:100%;height:100%;position:absolute;top:0;left:0;z-index:-1;'></image>
+     <view class='white-box'>
+        <view class='title'>
+          <image src='../images/jilv-icon01.png' class='title-img'/>
+          <text class='title-text'>院校搜索</text>
+       </view>
+        <view class='input-group'>
+            <navigator url='../components/schoolSearch/schoolSearch' hover-class='none'>
+              <input placeholder='请输入学校名称' class='input-in' value='{{schoolName}}' disabled='true'/>
+              <button class='btn'>
+                  <image src='../images/jilv-search.png' class='btn-img'/>
+              </button> 
+            </navigator> 
+        </view>
+        <text class='clearfix'></text>
+       <view class='title'>
+          <image src='../images/jilv-icon02.png' class='title-img' style='height:45rpx;'/>
+          <text class='title-text'>专业选择</text>
+       </view>
+       <view class='input-group'>
+         <navigator url='../components/majorChoose/majorChoose' hover-class='none'>
+            <input placeholder='未选择' class='input-in' value='{{majorName}}' disabled='true'/>
+            <button class='btn'>
+                <image src='../images/jilv-jiantou.png' class='btn-img' style='height:28rpx;'/>
+            </button>
+           </navigator> 
+       </view>
+       <text class='clearfix'></text>
+        <!-- <navigator url='../components/personScore/personScore' hover-class='none' class='sub-btn'> -->
+            <button bindtap='clickSub' class='sub-btn'>提交</button>
+        <!-- </navigator>  -->
+     </view>
+</view>
